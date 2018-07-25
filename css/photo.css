@@ -1,0 +1,62 @@
+/*搜索框*/
+.searchBox{
+    width: 280px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-top: 2%;
+}
+.searchBox:hover{
+    border: 1px solid #ff4f4d;
+}
+.searchBox input{
+    padding-left: 5%;
+    border: none;
+}
+.searchBox input:focus{
+   outline: none;
+}
+.searchBox input:focus .searchBox:hover{
+    border: 1px solid #ff4f4d;
+}
+.searchBox span{
+    margin-left: 60px;
+    line-height: 40px;
+}
+.main{
+    margin-top: 1%;
+    background: #e6e6e6;
+    padding:2% 2% 10% 2%;
+}
+.main .infoBox{
+    height: auto;
+    background: white;
+    font-family: "微软雅黑";
+    padding-bottom:16% ;
+}
+.main .infoBox h4{
+    padding:3% 3%;
+}
+.main .infoBox p{
+    font-size: 16px;
+    padding: 3% 3%;
+}.main .infoBox a{
+    text-decoration: none;
+ }
+.main .infoBox .detail{
+    color: red;
+    font-size: 16px;
+    border: 1px solid red;
+    padding: 6px 8px;
+    margin:6% 3%;
+    border-radius:5px;
+}
+.main .infoBox .detail:hover{
+    background: red;
+    color: white;
+
+}
+.main .infoBox .dis{
+    margin-left: 120px;;
+}

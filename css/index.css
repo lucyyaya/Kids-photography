@@ -1,0 +1,398 @@
+/*1.中等屏幕----导航*/
+/*right--按钮*/
+    /*left--导航*/
+    @media screen and (min-width:767px){
+        #box{
+            width:100%;
+            height:auto;
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:10;
+            background: white;
+            padding-bottom: 0.5%;
+            font-size: 14px;
+
+        }
+        #box .navbar-header{
+            width: 14%;
+            float: left;
+        }
+        #box .navbar-header .navbar-brand img{
+            margin-top: -5px;
+        }
+        #menu{
+            float: left;
+            width:86%;
+            margin-top: 1%;
+        }
+        .navbar-collapse .nav{
+            width: 80%;
+            float: left;
+            height: auto;
+        }
+        .navbar-collapse .nav li{
+            display: inline-block;
+            width: 15%;
+        }
+        .navbar-default .nav li a{
+            text-align: center;
+            padding: 6% 5%;
+            font-family: '微软雅黑';
+            font-size:16px;
+            font-weight: 400;
+        }
+        .navbar-default .navbar-nav .liactive{
+            background-color: #ececec;
+            border-radius: 5px 5px;
+        }
+        .navbar-default .navbar-nav .liactive:hover{
+            background-color: #ca0f09;
+            border-radius: 5px 5px;
+            border-bottom: 2px solid #ca0f09;
+        }
+        .navbar-default .navbar-nav li:hover a{
+            border-bottom: 2px solid #ca0f09;
+            box-sizing: border-box;
+        }
+        #form{
+            width: 20%;
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin: 0.5% 0 0 0 ;
+            padding: 0;
+        }
+        #search{
+            display: inline-block;
+            width: 40%;
+            height: 30px;
+            background: url("../img/hw1_sprite.png") -40px -70px;
+        }
+        #search:hover{
+            background: url("../img/hw1_sprite.png") -40px -106px;
+        }
+        .form-group a{
+            display: inline-block;
+            text-align: center;
+            padding: 5% 10%;
+            border: 1px solid black;
+            color: #ffffff;
+            float: left;
+        }
+        .form-group .inputactive{
+            background: #ca0f09;
+            color: white;
+        }
+        .form-group .loginactive{
+            border: 1px solid black;
+            color:#ca0f09;
+        }
+        .form-group .loginactive:hover{
+            background: #ca0f09;
+            color: #ffffff;
+        }
+
+        #search p{
+            width: 22%;
+            height: 10%;
+            border: 1px solid #e6e6e6;
+            position: fixed;
+            top: 9.6%;
+            right: 14%;
+            background: white;
+        }
+        #search p span{
+            position: absolute;
+            bottom:15%;
+            right: 1%;
+            display: inline-block;
+            width:12%;
+            height: 55%;
+            background: url("../img/hw1_sprite.png") -40px -105px;
+        }
+        #search-box{
+            width: 80%;
+            padding:5px 5px;
+            margin-top: 5%;
+            margin-left: 4%;
+        }
+
+
+/*主体动画*/
+.container1{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.container1 .img{
+    margin-left: 2%;
+    width: 100%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+}
+/*图片动画*/
+.img:hover img{
+    animation: move5 .5s linear forwards;
+}
+
+@keyframes move5 {
+    0%{
+        transform: translateX(-10px);
+    }
+    100%{
+        transform: translateX(-15px);
+    }
+}
+
+/*图片阴影*/
+.img .com{
+    width: 96%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    color: white;
+}
+.img .same{
+    width: 100%;
+    height: 48%;
+    position: absolute;
+    color: white;
+    overflow: hidden;
+    margin-left: 0
+}
+.img .com1{
+    top: 0;
+}
+.img .com2{
+     top: 50%;
+    margin-top: 1%
+}
+
+.com:hover {
+    background: #333333;
+    opacity: .5;
+}
+.same:hover{
+    background: #333333;
+    opacity: .5;
+}
+.com h2{
+    position: relative;
+    left: 30px;
+    top: 300px;
+}
+.same h2{
+    position: relative;
+    left: 30px;
+    top: 120px;
+    }
+.com:hover h2{
+    animation:move1 .3s linear forwards;
+}
+.same:hover h2{
+    animation: move3 .3s linear forwards;
+}
+@keyframes move1 {
+    0%{
+        top:300px;
+    }
+    50%{
+        top:295px;
+    }
+    100%{
+        top: 285px;
+    }
+}
+@keyframes move3 {
+    0%{
+        top: 120px;
+    }
+    50%{
+        top: 115px;
+    }
+    100%{
+        top: 105px;
+    }
+}
+.com p{
+    position: relative;
+    top: 360px;
+    left: 30px;
+    font-size: 16px;
+}
+.same p{
+      position: relative;
+      top: 180px;
+      left: 30px;
+      font-size: 16px;
+}
+.com:hover p{
+    animation:move2 .3s linear forwards;
+}
+.same:hover p{
+    display: block;
+    animation: move4 .5s linear forwards;
+}
+
+@keyframes move2 {
+    0%{
+        top:340px;
+        opacity: .1;
+    }
+    50%{
+        top: 320px;
+        opacity: .3;
+    }
+    100%{
+        top: 290px;
+        opacity: 1;
+    }
+}
+@keyframes move4 {
+    0%{
+        top: 160px;
+        opacity: .1;
+    }
+    50%{
+        top: 140px;
+        opacity: .3;
+    }
+    100%{
+        top: 120px;
+        opacity: 1;
+    }
+}
+
+/*视频播放*/
+    .ctrl{
+        position: absolute;
+        left:50%;
+        top: 40%;
+    }
+    .play{
+        position: relative;
+        z-index: 100;
+
+     }
+    .play .video{
+        position: fixed;
+        top: 0;
+        left: 5%;
+        width: 90%;
+        height: 100%;
+    }
+    .play .err{
+        position: fixed;
+        right: 5%;
+        top: 0;
+        z-index: 200;
+    }
+    #ad{
+        margin-top: 4%;
+    }
+
+}
+.same{
+    margin-left: 2%;
+}
+/*中等屏幕end*/
+
+@media screen and (max-width:768px){
+    #box .navbar-header .navbar-brand img{
+        margin-top: -10px;
+    }
+    .navbar-collapse .nav li{
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .navbar-collapse .nav li:hover{
+        background: #ca0f09;
+    }
+    .navbar-form{
+        margin-left: 35%;
+    }
+    .ctrl{
+        position: absolute;
+        left:40%;
+        top: 30%;
+    }
+    .play{
+        position: relative;
+    }
+    .play .video{
+        position: fixed;
+        width: 90%;
+        height: auto;
+        top: 5%;
+        left: 5%;
+
+    }
+    .play .err{
+        position: fixed;
+        right: 5%;
+        top: 5%;
+
+    }
+
+}
+
+
+.row .box1{
+    box-sizing: border-box;
+    padding-left: 80px;
+    font-family: "微软雅黑";
+}
+.row .style1{
+    font-size: 16px;
+    margin-top: 10px;
+}
+.row .style2{
+    color: rgb(153, 153, 153);
+    font-size: 14px;
+}
+.box1 h3:hover{
+    color: #d70000;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.row li.style1:hover{
+    color: #d70000;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.style3 p{
+    padding: 0;
+    margin: 0;
+}
+.play{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.4);
+    display: none;
+}
+
+/*精灵图---back to up*/
+.scroll{
+    background: #E22835;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    display: none;
+}
+.scroll a{
+    width: 36px;
+    height: 36px;
+    display: block;
+    color: white;
+    background: url("../img/hw1_sprite.png")  -48px -4px;
+    transform: rotate(180deg);
+}
+
+
+

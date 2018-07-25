@@ -1,0 +1,92 @@
+.containerBox .jump{
+    box-sizing: border-box;
+    margin: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+}
+.containerBox .jump a{
+    text-decoration: none !important;
+    font-family: "微软雅黑";
+    color: rgb(153, 153, 153);
+    font-size: 1.2em;
+}
+.containerBox .jump a:hover{
+    color: #d70000;
+}
+#partOne .row div{
+    font-family: "微软雅黑;
+}
+#partOne .row div p{
+    font-size:14px;
+    line-height: 30px;
+}
+
+/*表格相同的代码*/
+#partTwo{
+    background-color: #e6e6e6;
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+#partTwo form{
+    padding: 3% 5% 1% 0;
+    background: white;
+}
+#partTwo .form-group input{
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    padding: 12px 15px;
+}
+#partTwo .form-group input:focus{
+    outline: none;
+    border: 1px solid red;
+}
+#partTwo .form-group .control-label{
+    font-size: 16px;
+}
+#partTwo .form-group span{
+    margin-left: 3%;
+    font-size: 16px;
+    color: black;
+}
+#partTwo .form-group .radio input{
+    width: 3%;
+}
+/*屏幕大于768px*/
+@media screen and (min-width: 768px){
+    #partTwo form{
+        width: 60%;
+        margin-left: 20%;
+    }
+    #partTwo .form-group{
+        margin-left: 10%;
+    }
+    #partTwo .form-group input{
+        width: 95%;
+    }
+    #partTwo .form-group .radio{
+        margin-left: 2%;
+    }
+}
+/*小屏幕*/
+@media screen and (max-width: 768px){
+    #partTwo form{
+        width:98%;
+        margin-left: 1%;
+    }
+    #partTwo .form-group{
+        margin-left: 2%;
+    }
+    #partTwo .form-group input{
+        width: 100%;
+    }
+    #partTwo .form-group .radio{
+        margin-left: 3%;
+    }
+}
+
+
+
+
+

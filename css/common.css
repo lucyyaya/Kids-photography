@@ -1,0 +1,17 @@
+div,p,h1,h2,h3,h4,h5,h6,ul,li,dl{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+}
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.containerBox{
+    overflow-x: hidden;
+    position: absolute;
+}
+

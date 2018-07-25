@@ -1,0 +1,265 @@
+
+
+.form-group .bgsearch{
+    background: url("../img/hw1_sprite.png") -40px -70px;
+    padding-top: 1%;
+    margin-right: 6px;
+    border: none;
+}
+.form-group .bgsearch:hover{
+    background: url("../img/hw1_sprite.png") -40px -106px;
+    padding-top: 1%;
+}
+.form-group a{
+    color: white;
+    padding: 10px 12px;
+    text-decoration: none;
+    border: 1px solid #ca0f09;
+    margin-top: 1%;
+}
+.form-group .inputactive{
+    background: #ca0f09;
+    color: #ffffff;
+}
+.form-group .loginactive{
+    color:#ca0f09;
+}
+.form-group .loginactive:hover{
+    background: #ca0f09;
+    color: #ffffff;
+}
+/*left--导航*/
+@media screen and (min-width:768px){
+    .navbar{
+        width:100%;
+        height:auto;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:10;
+        background: white;
+    }
+    .navbar .container{
+        width: 100%;
+        padding: 0;
+    }
+    .navbar .container .navbar-header{
+        width: 10%;
+    }
+    .navbar .container .navbar-header .navbar-brand{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .navbar-collapse{
+        padding-top: 10px;
+    }
+    .navbar-collapse .navbar-nav{
+        font-size:1em;
+        box-sizing: border-box;
+    }
+    .navbar-default .navbar-nav li a{
+        line-height:5px;
+        float: left;
+        text-align: center;
+        margin-top: 8px;
+        font-size:1.2em;
+        box-sizing: border-box;
+
+    }
+    .navbar-default .navbar-nav .liactive{
+        background-color: #ececec;
+        border-radius: 5px 5px;
+    }
+    .navbar-default .navbar-nav .liactive:hover{
+        background-color: #ca0f09;
+        border-radius: 5px 5px;
+    }
+    .navbar-default .navbar-nav li:hover{
+        box-sizing: border-box;
+        float: left;
+        padding-bottom: 3px;
+        border-bottom: 2px solid #ca0f09;
+    }
+    .navbar-form{
+        /*width: 20%;*/
+        box-sizing: border-box;
+        margin-top:16px;
+        margin-right:5%;
+    }
+    .form-group{
+        height: auto;
+    }
+    .form-group span{
+        font-size: 1.5em;
+        color: #c7c7c7;
+        text-align: center;
+        margin-right: 5px;
+    }
+    .form-group span:hover{
+        color:red;
+    }
+    .form-group .bgsearch{
+        background: url("../img/hw1_sprite.png") -40px -70px;
+        padding-top: 1%;
+        margin-right: 6px;
+        border: none;
+    }
+    .form-group .bgsearch:hover{
+        background: url("../img/hw1_sprite.png") -40px -106px;
+        padding-top: 1%;
+    }
+    .form-group a{
+        color: white;
+        padding: 10px 12px;
+        text-decoration: none;
+        border: 1px solid #ca0f09;
+        margin-top: 1%;
+    }
+    .form-group .inputactive{
+        background: #ca0f09;
+        color: #ffffff;
+    }
+    .form-group .loginactive{
+        color:#ca0f09;
+    }
+    .form-group .loginactive:hover{
+        background: #ca0f09;
+        color: #ffffff;
+    }
+
+    /*search box*/
+    #search p{
+        width: 22%;
+        height: 10%;
+        border: 1px solid #e6e6e6;
+        position: fixed;
+        top: 9.6%;
+        right: 14%;
+        background: white;
+    }
+    #search p span{
+        position: absolute;
+        bottom:15%;
+        right: 1%;
+        display: inline-block;
+        width:12%;
+        height: 55%;
+        background: url("../img/hw1_sprite.png") -40px -105px;
+    }
+    #search-box{
+        width: 80%;
+        padding:5px 5px;
+        margin-top: 5%;
+        margin-left: 4%;
+    }
+    #ad{
+        margin-top: 4%;
+    }
+		.img .mask button{
+				top: 180px;
+		}
+
+}
+@media screen and (max-width:768px){
+    .navbar-collapse .nav li{
+        border-bottom: 1px solid #e6e6e6;
+    }
+    .navbar-collapse .nav li:hover{
+        background: #ca0f09;
+    }
+    .navbar-form{
+        margin-left: 40%;
+    }
+		.img .mask button{
+				top: 120px;
+		}
+}
+.content{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+.content .row{
+    position: relative;
+}
+.content .row div{
+    margin: 0;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+}
+.content  .img{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+/*图片阴影*/
+.img .mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.img .mask:hover{
+    background: rgba(0,0,0,.6);
+}
+.img .mask p{
+    position: relative;
+    top: 35%;
+    left: 45%;
+    color: white;
+    font-size: 1.2em;
+}
+.img .mask button{
+    background:rgba(0,0,0,.1) ;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 6px 13px;
+    position: relative;
+    left: 45%;
+    color: white;
+}
+.img .mask button:hover{
+    background: white;
+    color: black;
+}
+.content .row .col-md-6 img{
+    transition: all .5s linear;
+}
+.content .col-md-6 .row:hover img{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.content .check{
+    background: #e6e6e6;
+    padding: 1% 0 1% 47%;
+    color: #7e7e7e;
+}
+.content .check a{
+    padding-left: 30px;
+    text-decoration: none;
+    background: url("../img/hw1_sprite.png") -54px -12px no-repeat;
+}
+
+
+/*精灵图*/
+.scroll{
+    background: #E22835;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    display: none;
+}
+.scroll a{
+    width: 36px;
+    height: 36px;
+    display: block;
+    color: white;
+    background: url("../img/hw1_sprite.png") -48px -4px;
+    transform: rotate(180deg);
+}
+.hiddenImg{
+    display: none;
+}
